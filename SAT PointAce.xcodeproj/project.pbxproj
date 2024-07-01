@@ -7,35 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EB482352C334D230071FE0F /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB482342C334D230071FE0F /* ViewController1.swift */; };
+		5EB482372C334D330071FE0F /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB482362C334D330071FE0F /* ViewController2.swift */; };
+		5EB482392C334D460071FE0F /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB482382C334D460071FE0F /* ViewController3.swift */; };
 		5EE617002C330ED200EF23E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE616FF2C330ED200EF23E2 /* AppDelegate.swift */; };
 		5EE617022C330ED200EF23E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE617012C330ED200EF23E2 /* SceneDelegate.swift */; };
-		5EE617042C330ED200EF23E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE617032C330ED200EF23E2 /* ViewController.swift */; };
-		5EE617072C330ED200EF23E2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5EE617062C330ED200EF23E2 /* Base */; };
 		5EE617092C330ED400EF23E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE617082C330ED400EF23E2 /* Assets.xcassets */; };
 		5EE6170C2C330ED400EF23E2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5EE6170B2C330ED400EF23E2 /* Base */; };
-		5EE617142C33104800EF23E2 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE617132C33104800EF23E2 /* CustomTabBarController.swift */; };
-		5EE617162C33111500EF23E2 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE617152C33111500EF23E2 /* ProfileVC.swift */; };
-		5EE617182C33112B00EF23E2 /* AchievementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE617172C33112B00EF23E2 /* AchievementsVC.swift */; };
-		5EE6171A2C33113F00EF23E2 /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE617192C33113F00EF23E2 /* AddVC.swift */; };
-		5EE6171C2C33115000EF23E2 /* ProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE6171B2C33115000EF23E2 /* ProgressVC.swift */; };
-		5EE6171E2C33116C00EF23E2 /* RewardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE6171D2C33116C00EF23E2 /* RewardsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5EB482342C334D230071FE0F /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		5EB482362C334D330071FE0F /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		5EB482382C334D460071FE0F /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		5EE616FC2C330ED200EF23E2 /* SAT PointAce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAT PointAce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE616FF2C330ED200EF23E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EE617012C330ED200EF23E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5EE617032C330ED200EF23E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5EE617062C330ED200EF23E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EE617082C330ED400EF23E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EE6170B2C330ED400EF23E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EE6170D2C330ED400EF23E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5EE617132C33104800EF23E2 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
-		5EE617152C33111500EF23E2 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
-		5EE617172C33112B00EF23E2 /* AchievementsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsVC.swift; sourceTree = "<group>"; };
-		5EE617192C33113F00EF23E2 /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
-		5EE6171B2C33115000EF23E2 /* ProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressVC.swift; sourceTree = "<group>"; };
-		5EE6171D2C33116C00EF23E2 /* RewardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,14 +60,9 @@
 			children = (
 				5EE616FF2C330ED200EF23E2 /* AppDelegate.swift */,
 				5EE617012C330ED200EF23E2 /* SceneDelegate.swift */,
-				5EE617032C330ED200EF23E2 /* ViewController.swift */,
-				5EE617152C33111500EF23E2 /* ProfileVC.swift */,
-				5EE617172C33112B00EF23E2 /* AchievementsVC.swift */,
-				5EE617192C33113F00EF23E2 /* AddVC.swift */,
-				5EE6171B2C33115000EF23E2 /* ProgressVC.swift */,
-				5EE6171D2C33116C00EF23E2 /* RewardsVC.swift */,
-				5EE617052C330ED200EF23E2 /* Main.storyboard */,
-				5EE617132C33104800EF23E2 /* CustomTabBarController.swift */,
+				5EB482342C334D230071FE0F /* ViewController1.swift */,
+				5EB482362C334D330071FE0F /* ViewController2.swift */,
+				5EB482382C334D460071FE0F /* ViewController3.swift */,
 				5EE617082C330ED400EF23E2 /* Assets.xcassets */,
 				5EE6170A2C330ED400EF23E2 /* LaunchScreen.storyboard */,
 				5EE6170D2C330ED400EF23E2 /* Info.plist */,
@@ -145,7 +130,6 @@
 			files = (
 				5EE617092C330ED400EF23E2 /* Assets.xcassets in Resources */,
 				5EE6170C2C330ED400EF23E2 /* Base in Resources */,
-				5EE617072C330ED200EF23E2 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,29 +140,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EE617182C33112B00EF23E2 /* AchievementsVC.swift in Sources */,
-				5EE6171C2C33115000EF23E2 /* ProgressVC.swift in Sources */,
-				5EE617162C33111500EF23E2 /* ProfileVC.swift in Sources */,
-				5EE617042C330ED200EF23E2 /* ViewController.swift in Sources */,
+				5EB482392C334D460071FE0F /* ViewController3.swift in Sources */,
+				5EB482352C334D230071FE0F /* ViewController1.swift in Sources */,
+				5EB482372C334D330071FE0F /* ViewController2.swift in Sources */,
 				5EE617002C330ED200EF23E2 /* AppDelegate.swift in Sources */,
-				5EE617142C33104800EF23E2 /* CustomTabBarController.swift in Sources */,
-				5EE6171A2C33113F00EF23E2 /* AddVC.swift in Sources */,
 				5EE617022C330ED200EF23E2 /* SceneDelegate.swift in Sources */,
-				5EE6171E2C33116C00EF23E2 /* RewardsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5EE617052C330ED200EF23E2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5EE617062C330ED200EF23E2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5EE6170A2C330ED400EF23E2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
