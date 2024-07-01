@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+class ProgressVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+class AchievementsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

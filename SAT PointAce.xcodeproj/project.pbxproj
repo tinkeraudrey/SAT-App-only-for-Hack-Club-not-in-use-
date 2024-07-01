@@ -13,6 +13,12 @@
 		5EE617072C330ED200EF23E2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5EE617062C330ED200EF23E2 /* Base */; };
 		5EE617092C330ED400EF23E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE617082C330ED400EF23E2 /* Assets.xcassets */; };
 		5EE6170C2C330ED400EF23E2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5EE6170B2C330ED400EF23E2 /* Base */; };
+		5EE617142C33104800EF23E2 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE617132C33104800EF23E2 /* CustomTabBarController.swift */; };
+		5EE617162C33111500EF23E2 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE617152C33111500EF23E2 /* ProfileVC.swift */; };
+		5EE617182C33112B00EF23E2 /* AchievementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE617172C33112B00EF23E2 /* AchievementsVC.swift */; };
+		5EE6171A2C33113F00EF23E2 /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE617192C33113F00EF23E2 /* AddVC.swift */; };
+		5EE6171C2C33115000EF23E2 /* ProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE6171B2C33115000EF23E2 /* ProgressVC.swift */; };
+		5EE6171E2C33116C00EF23E2 /* RewardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE6171D2C33116C00EF23E2 /* RewardsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		5EE617082C330ED400EF23E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EE6170B2C330ED400EF23E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EE6170D2C330ED400EF23E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EE617132C33104800EF23E2 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		5EE617152C33111500EF23E2 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		5EE617172C33112B00EF23E2 /* AchievementsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsVC.swift; sourceTree = "<group>"; };
+		5EE617192C33113F00EF23E2 /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
+		5EE6171B2C33115000EF23E2 /* ProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressVC.swift; sourceTree = "<group>"; };
+		5EE6171D2C33116C00EF23E2 /* RewardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +71,13 @@
 				5EE616FF2C330ED200EF23E2 /* AppDelegate.swift */,
 				5EE617012C330ED200EF23E2 /* SceneDelegate.swift */,
 				5EE617032C330ED200EF23E2 /* ViewController.swift */,
+				5EE617152C33111500EF23E2 /* ProfileVC.swift */,
+				5EE617172C33112B00EF23E2 /* AchievementsVC.swift */,
+				5EE617192C33113F00EF23E2 /* AddVC.swift */,
+				5EE6171B2C33115000EF23E2 /* ProgressVC.swift */,
+				5EE6171D2C33116C00EF23E2 /* RewardsVC.swift */,
 				5EE617052C330ED200EF23E2 /* Main.storyboard */,
+				5EE617132C33104800EF23E2 /* CustomTabBarController.swift */,
 				5EE617082C330ED400EF23E2 /* Assets.xcassets */,
 				5EE6170A2C330ED400EF23E2 /* LaunchScreen.storyboard */,
 				5EE6170D2C330ED400EF23E2 /* Info.plist */,
@@ -138,9 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EE617182C33112B00EF23E2 /* AchievementsVC.swift in Sources */,
+				5EE6171C2C33115000EF23E2 /* ProgressVC.swift in Sources */,
+				5EE617162C33111500EF23E2 /* ProfileVC.swift in Sources */,
 				5EE617042C330ED200EF23E2 /* ViewController.swift in Sources */,
 				5EE617002C330ED200EF23E2 /* AppDelegate.swift in Sources */,
+				5EE617142C33104800EF23E2 /* CustomTabBarController.swift in Sources */,
+				5EE6171A2C33113F00EF23E2 /* AddVC.swift in Sources */,
 				5EE617022C330ED200EF23E2 /* SceneDelegate.swift in Sources */,
+				5EE6171E2C33116C00EF23E2 /* RewardsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
