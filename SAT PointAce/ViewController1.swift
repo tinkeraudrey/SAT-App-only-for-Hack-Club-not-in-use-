@@ -1,5 +1,9 @@
 import UIKit
 
+protocol TimerDelegate: AnyObject {
+    func timerDidFinish(totalElapsed: TimeInterval)
+}
+
 class ViewController1: UIViewController {
     
     var timer = Timer()
@@ -7,6 +11,8 @@ class ViewController1: UIViewController {
     var elapsedTime: TimeInterval = 0
     var totalElapsed: TimeInterval = 0 // Total accumulated time
     var isTimerRunning = false
+    
+    weak var delegate: TimerDelegate?
     
     let timerLabel: UILabel = {
         let label = UILabel()
@@ -82,12 +88,20 @@ class ViewController1: UIViewController {
         isTimerRunning = false
         startStopButton.setTitle("Start", for: .normal)
         submitButton.isHidden = false // Show submit button after stopping timer
+        
+        // Accumulate time to totalElapsed
+        if let startTime = startTime {
+            elapsedTime += Date().timeIntervalSince(startTime)
+        }
+        
+        // Reset timer variables
+        startTime = nil
     }
     
     @objc func updateTimerLabel() {
         guard let startTime = startTime else { return }
-        elapsedTime = Date().timeIntervalSince(startTime)
-        let formattedTime = formattedString(for: elapsedTime)
+        let currentTime = Date().timeIntervalSince(startTime) + elapsedTime
+        let formattedTime = formattedString(for: currentTime)
         timerLabel.text = formattedTime
     }
     
@@ -100,17 +114,25 @@ class ViewController1: UIViewController {
     }
     
     @objc func submitTimer() {
-        totalElapsed += elapsedTime // Accumulate total time
-        
-        // Pass total time to existing ViewController2 if it exists
-        if let vc2 = navigationController?.viewControllers.first(where: { $0 is ViewController2 }) as? ViewController2 {
-            vc2.totalElapsed = totalElapsed
-            vc2.updateTimeLabel() // Update time label in ViewController2
-            navigationController?.popToViewController(vc2, animated: true)
-        } else {
-            let vc2 = ViewController2()
-            vc2.totalElapsed = totalElapsed // Pass total time to new ViewController2
-            navigationController?.pushViewController(vc2, animated: true)
+        // If timer is running, stop it and update totalElapsed
+        if isTimerRunning {
+            stopTimer()
         }
+        
+        // Update totalElapsed
+        totalElapsed += elapsedTime
+        
+        // Notify delegate with updated totalElapsed
+        delegate?.timerDidFinish(totalElapsed: totalElapsed)
+        
+        // Save totalElapsed to UserDefaults
+        UserDefaults.standard.set(totalElapsed, forKey: "totalElapsed")
+        
+        // Reset elapsedTime for next session
+        elapsedTime = 0
+        
+        // Update UI
+        timerLabel.text = "00:00:00"
+        submitButton.isHidden = true // Hide submit button while timer is running
     }
 }

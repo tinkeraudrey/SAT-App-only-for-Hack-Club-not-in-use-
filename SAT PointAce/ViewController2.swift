@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController2: UIViewController {
+class ViewController2: UIViewController, TimerDelegate {
     
     var totalElapsed: TimeInterval = 0
     
@@ -38,7 +38,10 @@ class ViewController2: UIViewController {
             refreshButton.topAnchor.constraint(equalTo: timeLabel.bottomAnchor, constant: 20),
         ])
         
-        updateTimeLabel() // Ensure time label is updated initially
+        // Load totalElapsed from UserDefaults initially
+        totalElapsed = UserDefaults.standard.double(forKey: "totalElapsed")
+        
+        updateTimeLabel() // Ensure time label is updated with stored value
     }
     
     func updateTimeLabel() {
@@ -54,6 +57,14 @@ class ViewController2: UIViewController {
     }
     
     @objc func refreshTime() {
-        updateTimeLabel() // Update time label when refresh button is tapped
+        // Reload totalElapsed from UserDefaults
+        totalElapsed = UserDefaults.standard.double(forKey: "totalElapsed")
+        updateTimeLabel()
+    }
+    
+    // Implement TimerDelegate method to update totalElapsed
+    func timerDidFinish(totalElapsed: TimeInterval) {
+        self.totalElapsed = totalElapsed
+        updateTimeLabel()
     }
 }
