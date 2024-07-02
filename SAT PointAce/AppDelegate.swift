@@ -8,10 +8,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        let navController = UINavigationController(rootViewController: ViewController1())
-        window?.rootViewController = navController
-        window?.makeKeyAndVisible()
         
+        let viewController = ViewController3() // Start with ViewController3 as the initial view controller
+        let navigationController = UINavigationController(rootViewController: viewController)
+        
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+
         return true
     }
 }
